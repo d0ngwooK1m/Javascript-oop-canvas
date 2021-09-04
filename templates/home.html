@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="outer-wrap">
+        <div class="signup-form-wrap">
+            <h1 class="signup-title">Sign up</h1>
+            <label class="s-nickname-label">Nickname</label>
+            <input type="text" placeholder="Nickname" class="s-nickname-input">
+
+            <label class="s-email-label">Email</label>
+            <input type="email" placeholder="Email" class="s-email-input">
+
+            <label class="s-password-label">Password</label>
+            <input type="password" placeholder="Password" class="s-password-input">
+
+            <label class="s-check-password-label">Check Password</label>
+            <input type="password" placeholder="Check Password" class="s-check-password-input">
+
+            <button class="signup-submit">Sign up</button>
+        </div>
+
+        <div class="login-form-wrap">
+            <h1 class="login-title">Log in</h1>
+            <label class="l-email-label">Email</label>
+            <input type="email" placeholder="Email" class="l-email-input">
+
+            <label class="l-password-label">Password</label>
+            <input type="password" placeholder="Password" class="l-password-input">
+
+            <button class="login-submit">Log in</button>
+        </div>
+    </div>
+
+{% endblock %}

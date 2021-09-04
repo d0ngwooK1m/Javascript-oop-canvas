@@ -1,0 +1,54 @@
+.outer-wrap {
+    display: flex;
+}
+
+/* Signup */
+
+.signup-form-wrap {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    padding: 10px;
+}
+
+.signup-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.s-nickname-input,
+.s-email-input,
+.s-password-input,
+.s-check-password-input {
+    width: 95%;
+}
+
+.signup-submit {
+    margin-top: 10px;
+}
+
+.login-form-wrap {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    padding: 10px;
+}
+
+/* login */
+
+.login-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+
+.l-email-input,
+.l-password-input {
+    width: 95%;
+}
+
+.login-submit {
+    margin-top: 10px;
+}

@@ -28,14 +28,39 @@
     margin-top: 10px;
 }
 
-.login-form-wrap {
+
+
+/* .signup_form_wrap {
     width: 350px;
     height: 350px;
     margin: auto;
     padding: 10px;
 }
 
+.signup-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+input[name="signup_nickname"],
+input[name="signup_email"],
+input[name="signup_password"],
+input[name="signup_check_password"] {
+    width: 95%;
+}
+
+.signup_button {
+    margin-top: 10px;
+} */
+
 /* login */
+.login-form-wrap {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    padding: 10px;
+}
 
 .login-title {
     font-size: 1.5rem;

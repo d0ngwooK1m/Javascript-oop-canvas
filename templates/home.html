@@ -3,13 +3,13 @@
 {% block content %}
 
     <div class="outer-wrap">
-        <div class="signup-form-wrap">
+        <form class="signup-form-wrap">
             <h1 class="signup-title">Sign up</h1>
             <label class="s-nickname-label">Nickname</label>
             <input type="text" placeholder="Nickname" class="s-nickname-input">
 
             <label class="s-email-label">Email</label>
-            <input type="email" placeholder="Email" class="s-email-input">
+            <input type="email" placeholder="Email"  class="s-email-input">
 
             <label class="s-password-label">Password</label>
             <input type="password" placeholder="Password" class="s-password-input">
@@ -18,7 +18,24 @@
             <input type="password" placeholder="Check Password" class="s-check-password-input">
 
             <button class="signup-submit">Sign up</button>
-        </div>
+        </form>
+
+        <!-- <form class="signup_form_wrap" id="signupForm">
+            <h1 class="signup-title">Sign up</h1>
+            <label for="signup_nickname">Nickname</label>
+            <input type="text" placeholder="Nickname" name="signup_nickname" id="signup_nickname">
+
+            <label for="signup_email">Email</label>
+            <input type="email" placeholder="Email" name="signup_email" id="signup_email">
+
+            <label for="signup_password">Password</label>
+            <input type="password" placeholder="Password" name="signup_password" id="signup_password">
+
+            <label for="signup_check_password">Check Password</label>
+            <input type="password" placeholder="Check Password" name="signup_check_password" id="signup_check_password">
+
+            <button type="submit" class="signup_button">Sign up</button>
+        </form> -->
 
         <div class="login-form-wrap">
             <h1 class="login-title">Log in</h1>

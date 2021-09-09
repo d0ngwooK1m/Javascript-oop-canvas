@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block head %}
+    <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
+
 {% block content %}
 
     <div class="outer-wrap">
@@ -19,23 +23,6 @@
 
             <button class="signup-submit">Sign up</button>
         </form>
-
-        <!-- <form class="signup_form_wrap" id="signupForm">
-            <h1 class="signup-title">Sign up</h1>
-            <label for="signup_nickname">Nickname</label>
-            <input type="text" placeholder="Nickname" name="signup_nickname" id="signup_nickname">
-
-            <label for="signup_email">Email</label>
-            <input type="email" placeholder="Email" name="signup_email" id="signup_email">
-
-            <label for="signup_password">Password</label>
-            <input type="password" placeholder="Password" name="signup_password" id="signup_password">
-
-            <label for="signup_check_password">Check Password</label>
-            <input type="password" placeholder="Check Password" name="signup_check_password" id="signup_check_password">
-
-            <button type="submit" class="signup_button">Sign up</button>
-        </form> -->
 
         <div class="login-form-wrap">
             <h1 class="login-title">Log in</h1>

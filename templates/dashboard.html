@@ -3,5 +3,10 @@
 {% block content %}
 
     <h1>Dashboard</h1>
+    <a class="logout-submit" href="/user/logout">logout</a>
+    <div>
+        {{ session['user']['nickname'] }}님, 환영합니다!
+    </div>
+
 
 {% endblock %}

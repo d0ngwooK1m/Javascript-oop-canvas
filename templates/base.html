@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-    <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>
+{#    <script defer src="{{ url_for('static', filename='js/script.js') }}"></script>#}
+    {% block head %}
+    {% endblock %}
 </head>
 <body>
     

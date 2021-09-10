@@ -36,7 +36,7 @@ class User:
 
     def login(self):
         result = request.get_json()
-        print(result)
+        # print(result)
 
         match_info = db.users.find_one({"email": result["email"]})
         registered_password = match_info["password"]

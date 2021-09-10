@@ -1,12 +1,33 @@
 {% extends "base.html" %}
 
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/canvas.css') }}">
+    <script defer src="{{ url_for('static', filename='js/canvas.js') }}"></script>
+{% endblock %}
+
 {% block content %}
 
-    <h1>Dashboard</h1>
-    <a class="logout-submit" href="/user/logout">logout</a>
-    <div>
-        {{ session['user']['nickname'] }}님, 환영합니다!
+    <nav class="dashboard-nav">
+        <div class="nickname-wrapper">
+            {{ session['user']['nickname'] }}님, 환영합니다! 오늘 기분은 어땠는지 그림으로 표현해 보세요!
+        </div>
+        <a class="logout-submit" href="/user/logout">logout</a>
+    </nav>
+
+    <canvas class="canvas" width="600" height="400">이 브라우저는 캔버스를 지원하지 않습니다.</canvas>
+    <div class="control">
+        <button class="color-btn" data-color="black"></button>
+        <button class="color-btn" data-color="red"></button>
+        <button class="color-btn" data-color="green"></button>
+        <button class="color-btn" data-color="blue"></button>
     </div>
+    <button class="eraser-btn">Eraser</button>
+    <button class="clear-btn">Clear</button>
+    <button class="save-btn">이미지 저장</button>
+    <div class="result-image"></div>
+
+
 
 
 {% endblock %}
